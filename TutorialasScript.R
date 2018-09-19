@@ -18,7 +18,7 @@ str(LPI)
 LPI2 <- gather(LPI, "year", "abundance", 9:53)
 View(LPI2)
 
-parse_number drops any non-numeric characters before or after the first number 
+#parse_number drops any non-numeric characters before or after the first number 
 LPI2$year <- parse_number(LPI2$year)
 
 # When manipulating data it's always good check if the variables have stayed how we want them
@@ -169,7 +169,7 @@ panel <- grid.arrange(bison_hist + ggtitle("(a)") + ylab("Count") + xlab("Abunda
                       ncol=1) # ncol determines how many columns you have
 
 #make sure you manually create the subdirectory folder first before saving!
-ggsave(panel, file="figures/bison_panel2.png", width=5, height=12 units="in") # the file is saved in your working directory, find it with getwd()
+ggsave(panel, file="figures/bison_panel2.png", width=5, height=12) # the file is saved in your working directory, find it with getwd()
 ggsave(panel, file="figures/bison_panel2.pdf", width=5, height=12) # save as a PDF 
 
 
