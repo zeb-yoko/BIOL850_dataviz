@@ -1,5 +1,5 @@
 # BIOL850_dataviz
-Workshop on ggplot2 and data visulaization
+Workshop on ggplot2 and data visualization for NDSU Biology 850 - Advanced Ecology Course
 
 Living Planet Index data http://www.livingplanetindex.org/home/index 
 
